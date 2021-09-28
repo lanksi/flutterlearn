@@ -8,6 +8,7 @@ import 'package:futterlearn/Demo/demo5_home.dart';
 import 'package:futterlearn/Demo/demo7_home.dart';
 
 import 'Demo/demo6_home.dart';
+import 'Demo/demo8_home.dart';
 
 
 void main() => runApp(MyApp());
@@ -129,6 +130,16 @@ class FullSampleHomePage extends StatelessWidget {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
                         return demo7();
+                      }));
+                    },
+                  ),
+                  SizedBox(height: 24),
+                  _buildButton(
+                    text: "demo8",
+                    onClick: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return demo8();
                       }));
                     },
                   ),
